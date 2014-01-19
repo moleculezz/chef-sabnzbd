@@ -5,6 +5,8 @@ default['sabnzbd']['port']   = "8080"
 default['sabnzbd']['download_dir']   = "Downloads/incomplete"
 default['sabnzbd']['complete_dir']   = "Downloads/complete"
 default['sabnzbd']['api_key']   = ""
+default['sabnzbd']['rating_api_key']     = ""
+default['sabnzbd']['nzb_key']               = ""
 
 
 default['sabnzbd']['enable_tv_sorting'] = "1"
