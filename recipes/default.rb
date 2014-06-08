@@ -8,14 +8,11 @@ apt_repository "sabnzbd" do
   key "4BB9F05F"
 end
 
-%w{
-  sabnzbdplus sabnzbdplus-theme-smpl
-  sabnzbdplus-theme-plush sabnzbdplus-theme-iphone
-  }.each do |pkg|
-      package pkg do
-          action :upgrade
-      end
+%w{sabnzbdplus sabnzbdplus-theme-plush}.each do |pkg|
+  package pkg do
+    action :upgrade
   end
+end
 
 template "/etc/default/sabnzbdplus" do
   source "sabnzbd.erb"
