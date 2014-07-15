@@ -25,6 +25,7 @@ default['sabnzbd']['quota_size']  = "30G"
 default['sabnzbd']['quota_resume'] = "0"
 default['sabnzbd']['download_free'] ="1G"
 default['sabnzbd']['schedlines'] = ""
+default['sabnzbd']['script_dir'] = ""
 
 default['sabnzbd']['servers'] = [
                                               {   "name" => "usenetserver1.com",
