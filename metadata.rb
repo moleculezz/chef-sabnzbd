@@ -1,3 +1,4 @@
+name             'sabnzbd'
 maintainer       "Thomas Meeus"
 maintainer_email "thomas@sector7g.be"
 license          "MIT"
