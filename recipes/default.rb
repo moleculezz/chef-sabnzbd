@@ -30,6 +30,14 @@ directory  "/home/#{node['sabnzbd']['user']}/.sabnzbd/" do
   action :create
 end
 
+template "/home/#{node['sabnzbd']['user']}/.sabnzbd/sabnzbd.ini" do
+  source "sabnzbd.ini.erb"
+  mode 0600
+  notifies :restart, 'service[sabnzbdplus]'
+  owner node["sabnzbd"]["user"]
+  group node["sabnzbd"]["group"]
+end
+
 service "sabnzbdplus" do
   action :start
 end
