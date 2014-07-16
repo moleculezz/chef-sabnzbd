@@ -38,8 +38,8 @@
 
 [CouchPotato]
     #### autoProcessing for Movies
-    #### <%= node["nzbtomedia"]['couchpotato']['category'] %> - category that gets called for post-processing with CPS
-    [[<%= node["nzbtomedia"]['couchpotato']['category'] %>]]
+    #### <%= node["nzbtomedia"]['couchpotato']['category']['name'] %> - category that gets called for post-processing with CPS
+    [[<%= node["nzbtomedia"]['couchpotato']['category']['name'] %>]]
         enabled = <%= node["nzbtomedia"]['couchpotato']['category']['enabled'] %>
         apikey = <%= node["nzbtomedia"]['couchpotato']['apikey'] %>
         host = localhost
@@ -64,8 +64,8 @@
 
 [SickBeard]
     #### autoProcessing for TV Series
-    #### <%= node["nzbtomedia"]['sickbeard']['category'] %> - category that gets called for post-processing with SB
-    [[<%= node["nzbtomedia"]['sickbeard']['category'] %>]]
+    #### <%= node["nzbtomedia"]['sickbeard']['category']['name'] %> - category that gets called for post-processing with SB
+    [[<%= node["nzbtomedia"]['sickbeard']['category']['name'] %>]]
         enabled = <%= node["nzbtomedia"]['sickbeard']['category']['enabled'] %>
         host = localhost
         port = <%= node["nzbtomedia"]['sickbeard']['port'] %>
