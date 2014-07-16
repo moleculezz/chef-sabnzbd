@@ -38,10 +38,7 @@ template "/home/#{node['sabnzbd']['user']}/.sabnzbd/sabnzbd.ini" do
   group node["sabnzbd"]["group"]
 end
 
-service "sabnzbdplus" do
-  action :start
-end
 
-bash "update-rc.d" do
-  code "update-rc.d sabnzbdplus defaults"
+service "sabnzbdplus" do
+  action [ :enable, :start ]
 end
