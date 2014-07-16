@@ -26,7 +26,7 @@ default['sabnzbd']['download_free'] =""
 default['sabnzbd']['schedlines'] = ","
 default['sabnzbd']['script_dir'] = ""
 
-default['sabnzbd']['servers'] = [{}]
+default['sabnzbd']['servers'] = []
 default['sabnzbd']['categories'] = [
   {
     "name" => "*",
