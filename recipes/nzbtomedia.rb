@@ -19,17 +19,16 @@
 
 include_recipe "git"
 
-git "nzbToMedia" do
+git node['nzbtomedia']['install_dir'] do
   repository node['nzbtomedia']['git_url']
   revision node['nzbtomedia']['git_ref']
-  user node["sabnzbd"]["user"]
-  group node["sabnzbd"]["group"]
-  destination node['nzbtomedia']['install_dir']
+  user node['sabnzbd']['user']
+  group node['sabnzbd']['group']
 end
 
 template "#{node['nzbtomedia']['install_dir']}/autoProcessMedia.cfg" do
-  source 'autoProcessMedia.cfg.erb'
-  owner node["sabnzbd"]["user"]
-  group node["sabnzbd"]["user"]
+  source "autoProcessMedia.cfg.erb"
+  owner node['sabnzbd']['user']
+  group node['sabnzbd']['group']
   mode 00644
 end
