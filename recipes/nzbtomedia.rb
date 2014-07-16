@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+include_recipe "git"
+
 git "nzbToMedia" do
   repository node['nzbtomedia']['git_url']
   revision node['nzbtomedia']['git_ref']

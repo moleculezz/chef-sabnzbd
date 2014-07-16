@@ -8,3 +8,4 @@ version          "1.0.0"
 supports          "ubuntu", ">= 12.10"
 
 depends         "apt"
+depends         "git"
