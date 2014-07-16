@@ -30,7 +30,6 @@ directory  "/home/#{node['sabnzbd']['user']}/.sabnzbd/" do
   action :create
 end
 
-=begin
 template "/home/#{node['sabnzbd']['user']}/.sabnzbd/sabnzbd.ini" do
   source "sabnzbd.ini.erb"
   mode 0600
@@ -38,8 +37,6 @@ template "/home/#{node['sabnzbd']['user']}/.sabnzbd/sabnzbd.ini" do
   owner node["sabnzbd"]["user"]
   group node["sabnzbd"]["group"]
 end
-=end
-
 
 service "sabnzbdplus" do
   action [ :enable, :start ]
