@@ -64,7 +64,7 @@ default['sabnzbd']['categories'] = [
 
 default['nzbtomedia']['git_url'] = "https://github.com/clinton-hall/nzbToMedia.git"
 default['nzbtomedia']['git_ref'] = "4f7e4b3808079a490bc042d03d30318c8c3f9f64" # v10.3
-default['nzbtomedia']['install_dir'] = "#{node['etc']['passwd'][node['sabnzbd']['user']]['dir']}/.nzbToMedia"
+default['nzbtomedia']['install_dir'] = "/home/#{node['sabnzbd']['user']}/.nzbToMedia"
 default["nzbtomedia"]['general']['version_notify'] = "0"
 default["nzbtomedia"]['general']['check_media'] = "0"
 default["nzbtomedia"]['couchpotato']['category'] = "movies"
