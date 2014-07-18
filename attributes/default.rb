@@ -38,7 +38,7 @@ default['sabnzbd']['categories'] = [
     "priority" => "-100",
     "pp" => "3",
     "script" => "None",
-    "newsbin" => "",
+    "newzbin" => "",
     "dir" => ""
   },
   {
@@ -46,7 +46,7 @@ default['sabnzbd']['categories'] = [
     "priority" => "-100",
     "pp" => "",
     "script" => "Default",
-    "newsbin" => "Music",
+    "newzbin" => "Music",
     "dir" => "music"
   },
   {
@@ -54,7 +54,7 @@ default['sabnzbd']['categories'] = [
     "priority" => "-100",
     "pp" => "",
     "script" => "nzbToSickBeard.py",
-    "newsbin" => "TV",
+    "newzbin" => "TV",
     "dir" => "tv"
   },
   {
@@ -62,7 +62,7 @@ default['sabnzbd']['categories'] = [
     "priority" => "-100",
     "pp" => "",
     "script" => "nzbToCouchPotato.py",
-    "newsbin" => "Movies",
+    "newzbin" => "Movies",
     "dir" => "movies"
   }
 ]
