@@ -27,7 +27,7 @@ default['sabnzbd']['quota_period'] = "m"
 default['sabnzbd']['quota_day'] = ""
 default['sabnzbd']['quota_size'] = ""
 default['sabnzbd']['quota_resume'] = "0"
-default['sabnzbd']['download_free'] =""
+default['sabnzbd']['download_free'] ="8G"
 default['sabnzbd']['schedlines'] = ","
 default['sabnzbd']['script_dir'] = ""
 
