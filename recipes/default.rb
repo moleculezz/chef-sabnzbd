@@ -44,7 +44,7 @@ end
 directory  "/home/#{node['sabnzbd']['user']}/.sabnzbd/" do
   owner node["sabnzbd"]["user"]
   group node["sabnzbd"]["group"]
-  mode "0755"
+  mode 0755
   recursive true
   action :create
 end

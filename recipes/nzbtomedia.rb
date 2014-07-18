@@ -30,5 +30,5 @@ template "#{node['nzbtomedia']['install_dir']}/autoProcessMedia.cfg" do
   source "autoProcessMedia.cfg.erb"
   owner node['sabnzbd']['user']
   group node['sabnzbd']['group']
-  mode 00644
+  mode 0600
 end
