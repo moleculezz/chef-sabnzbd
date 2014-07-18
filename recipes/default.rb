@@ -27,7 +27,7 @@ apt_repository "sabnzbd" do
   key "4BB9F05F"
 end
 
-%w{sabnzbdplus sabnzbdplus-theme-plush}.each do |pkg|
+%w{sabnzbdplus sabnzbdplus-theme-plush p7zip}.each do |pkg|
   package pkg do
     action :upgrade
   end
