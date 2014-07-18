@@ -35,7 +35,7 @@ default['sabnzbd']['servers'] = []
 default['sabnzbd']['categories'] = [
   {
     "name" => "*",
-    "priority" => "",
+    "priority" => "-100",
     "pp" => "3",
     "script" => "None",
     "newsbin" => "",

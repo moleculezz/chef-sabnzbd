@@ -15,7 +15,7 @@ cache_limit = ""
 rating_enable = 0
 ignore_unrar_dates = 0
 par_option = ""
-web_color = Gold
+web_color = ""
 enable_recursive = 1
 pre_check = <%= node['sabnzbd']['pre_check'] %>
 folder_rename = 1
@@ -48,7 +48,7 @@ movie_sort_extra = -cd%1
 quota_size = "<%= node['sabnzbd']['quota_size'] %>"
 rss_rate = 60
 enable_unzip = 1
-download_free = "<%= node['sabnzbd']['download_free'] %>"
+download_free = <%= node['sabnzbd']['download_free'] %>
 port = <%= node['sabnzbd']['port'] %>
 enable_movie_sorting = <%= node['sabnzbd']['enable_movie_sorting'] %>
 wait_ext_drive = 5
@@ -128,7 +128,7 @@ send_group = 0
 refresh_rate = 0
 prio_sort_list = ,
 movie_categories = <%= node['sabnzbd']['movie_categories'] %>
-script_dir = "<%= node['sabnzbd']['script_dir'] %>"
+script_dir = <%= node['sabnzbd']['script_dir'] %>
 email_pwd = ""
 empty_postproc = 0
 ignore_wrong_unrar = 0
@@ -196,9 +196,9 @@ retention = <%= server['retention'] %>
 <% @node['sabnzbd']['categories'].each do |categorie| %>
 [[<%= categorie['name'] %>]]
 priority = <%= categorie['priority'] %>
-pp = <%= categorie['pp'] %>
+pp = "<%= categorie['pp'] %>"
 name = <%= categorie['name'] %>
 script = <%= categorie['script'] %>
-newzbin = <%= categorie['newzbin'] %>
-dir = <%= categorie['dir'] %>
+newzbin = "<%= categorie['newzbin'] %>"
+dir = "<%= categorie['dir'] %>"
 <% end %>
