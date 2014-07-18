@@ -38,13 +38,10 @@ default['sabnzbd']['categories'] = [
     "priority" => "-100",
     "pp" => "3",
     "script" => "None",
-    "newzbin" => "",
-    "dir" => ""
   },
   {
     "name" => "music",
     "priority" => "-100",
-    "pp" => "",
     "script" => "Default",
     "newzbin" => "Music",
     "dir" => "music"
@@ -52,7 +49,6 @@ default['sabnzbd']['categories'] = [
   {
     "name" => "tv",
     "priority" => "-100",
-    "pp" => "",
     "script" => "nzbToSickBeard.py",
     "newzbin" => "TV",
     "dir" => "tv"
@@ -60,7 +56,6 @@ default['sabnzbd']['categories'] = [
   {
     "name" => "movies",
     "priority" => "-100",
-    "pp" => "",
     "script" => "nzbToCouchPotato.py",
     "newzbin" => "Movies",
     "dir" => "movies"

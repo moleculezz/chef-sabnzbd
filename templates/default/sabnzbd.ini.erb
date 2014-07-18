@@ -193,12 +193,12 @@ port = <%= server['port'] %>
 retention = <%= server['retention'] %>
 <% end %>
 [categories]
-<% @node['sabnzbd']['categories'].each do |categorie| %>
-[[<%= categorie['name'] %>]]
-priority = <%= categorie['priority'] %>
-pp = "<%= categorie['pp'] %>"
-name = <%= categorie['name'] %>
-script = <%= categorie['script'] %>
-newzbin = "<%= categorie['newzbin'] %>"
-dir = "<%= categorie['dir'] %>"
+<% @node['sabnzbd']['categories'].each do |category| %>
+[[<%= category['name'] %>]]
+priority = <%= category['priority'] %>
+pp = <%= category['pp'] ? category['pp'] : '""' %>
+name = <%= category['name'] %>
+script = <%= category['script'] %>
+newzbin = <%= category['newzbin'] ? category['newzbin'] : '""' %>
+dir = <%= category['dir'] ? category['dir'] : '""' %>
 <% end %>
